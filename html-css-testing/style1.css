@@ -1,0 +1,262 @@
+p{
+    color: rgb(2, 2, 1);
+}
+
+.colorido{
+    color:green
+}
+
+#paragrafo{
+    color: red;
+}
+
+*{
+    color:#ff47d4
+}
+
+main h3{
+    color: black;
+}
+
+main > h3{
+    color: #03ecfc;
+}
+
+.elemento-pai{
+    width: 300px; /** largura **/
+    height: 300px; /** altura **/
+    background-color: aqua;
+}
+
+.exemplo:hover{
+    background-color: black;
+    width: 150px; /** largura **/
+    height: 150px; /** altura **/
+}
+
+.exemplo1:focus{
+    background-color: purple;
+    width: 50%; 
+    height: 50%;
+}
+
+.exemplo2:active{
+    background-color: green;
+}
+
+li:first-child{
+    color: blue;
+}
+
+li:last-child{
+    color: darkorange;
+}
+
+/** escolher posição **/
+li:nth-child(2){
+    color: darkgrey;
+}
+
+/** para impares **/
+li:nth-child(odd){
+    color: rgb(169, 169, 169);
+}
+
+/** para pares **/
+li:nth-child(even){
+    color: rgb(8, 7, 7);
+}
+
+.sample::after{
+    content: "- Depois";
+}
+
+.sample::before{
+    content: "Antes - ";
+}
+
+.texto1{
+    font-family: fantasy, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+}
+
+.texto2{
+    font-family: 'Rubik Burned', system-ui;
+    background-color: lightgreen;
+    display: inline;
+}
+
+/** inline não aceita width ou height **/
+.texto3{
+    background-color: lightgreen;
+    display: inline;
+}
+
+.texto4{
+    background-color: lightblue;
+    display: block;
+}
+
+.link{
+    background-color: lightpink;
+    padding: 15px;
+    display: inline-block;
+}
+
+.caixa{
+    background-color: lightpink;
+    width: 150px;
+    height: 150px;
+    position: static;
+    top: 400px;
+}
+
+.caixa2{
+    background-color: darkblue;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 40px;
+    left: 500px;
+}
+
+.caixa3{
+    background-color: rgb(103, 167, 40);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 40px;
+    left: 1000px;
+}
+
+.caixa4{
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.caixa5{
+    background-color: orangered;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 100px;
+}
+
+.caixa6{
+    background-color: rgb(0, 255, 76);
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.caixa7{
+    background-color: rgb(210, 42, 1);
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-bottom: 105px;
+    margin-left: 90px;
+}
+
+.caixa8{
+    background-color: rgb(90, 98, 174);
+    width: 150px;
+    height: 150px;
+    margin: 5px 10px 2px 50px;
+}
+
+.caixa9{
+    background-color: rgb(190, 248, 254);
+    width: 150px;
+    height: 150px;
+    margin:30px 40px;
+}
+
+.btn1{
+    padding: 15px;
+    cursor: help;
+}
+
+.btn2{
+    padding: 5px 15px;
+    /** px em cima e em baixo, 20 px dos lados**/
+    cursor: pointer;
+}
+
+.btn3:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.texto8{
+    background-color: rgb(21, 88, 95);
+    color: white;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box; /**para não somar o padding e borda na dimensão da caixa**/
+}
+
+.caixa10{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.caixa11{
+    border-width: 2px;
+    border-style: solid;
+    border-color: greenyellow;
+    margin: 5px;
+}
+
+.caixa12{
+    border-width: 2px;
+    border-style: solid;
+    border-color: greenyellow;
+    width: 150px;
+    height: 150px;
+    border-radius:  5px 15px 20px 25px;
+    margin: 5px;
+}
+
+.caixa13{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    box-shadow: 5px 5px black;
+    margin: 5px;
+}
+
+.caixa14{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(90, 98, 174);
+    box-shadow: 5px 5px 10px 5px black;
+    margin: 5px;
+}
+
+.caixa15{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 169, 43);
+    margin:10px;
+    float: left;
+}
+
+.caixa16{
+    color: black;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(228, 19, 43);
+    margin-left:500px;
+    float: left;
+   /** overflow: hidden;   para esconder o conteúdo **/
+   overflow: scroll; /**cria caixa de rolagem de texto**/
+}

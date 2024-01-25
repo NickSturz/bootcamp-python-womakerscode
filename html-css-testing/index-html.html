@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta name="Author" content="Nick">
+        <meta name="description" content="Classe de HTML">
+        <title>Exemplo Live Server</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h2> esse é o cabeçalho do site</h2>
+        </header>
+        <main> 
+            <h2>dentro do main temos o conteúdo principal do sit, só é aberto e fechado uma vez</h2>
+        <h1>Exemplo Live Server - titulo que vai no body - TIULO H1</h1>
+        <h2>Titulo h2</h2>
+        <h3>Título h3</h3>
+        <h4>Titulo h4</h4>
+        <h5>Título h5</h5>
+        <h6>Título h6</h6>
+        <p>Este é um parágrafo</p>
+        <p>Este é um parágrafo <strong>para dar ênfase</strong></p>
+        <p>Este é um parágrafo <em>Em itálico, porém cuidado ao usar</em> </p>
+        <p lang="en">This paragraph is im English</p>
+        <h2>em baixo uma lista ordenada</h2>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+        <h2>em baixo uma lista não ordenada</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <h2>Trabalhando com links</h2>
+        <p>Este é um link para meu <a href="https://www.linkedin.com/in/nsturz/" title="Linkedin target blank para abrir nova aba" target="_blank" rel="noreferrer noopener"> linkedinho</a></p>
+        <h3>Forma errada</h3>
+        <p> rel é para dizer que o site não terá conexão com o seu. Este é um link para meu <a href="https://www.linkedin.com/in/nsturz/" title="link" target="_blank" rel="noreferrer noopener"> linkedinho - é preciso deixar sucinto sobre oq se trata no title</a></p>
+        <h2>Trabalhando com forms</h2>
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" placeholder="Digite sua idade">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem que tenha mais de uma linha" placeholder="Digite sua mensaem">Se tiver texto aqui já fica preenchido um pré texto que pode ser apagado pelo user</textarea>
+            </div>
+            <div>
+                <button type="submit"> Enviar, ele limpa todos os dados preenchidos, precisa então ser enviado para um servidor ou banco</button>
+            </div>
+        </form>
+
+        <h2>Trabalhando multimídia</h2>
+        <img src="/cute-dog.jpg" alt="Doguinho com oculos de sol em forma de coração, se a imagem não tiver significado, deixar o alt vazio, evitar inseirir textos em imagens, descritivo para leitor de tela">
+        <figure>
+            <img src="/doguinho.jpg" title="titulo da imagem sem legenda" alt="doguinho fofo">
+            <figcaption>Doguinho de orelhas pontudas sorrindo</figcaption>
+        </figure>
+
+        <button aria-haspopup="true">Button interativo aria</button>
+        <input type="checkbox" aria-selected="true">
+        <div>
+            <h3>leitores de tela e plugins de acessibilidade são importantes</h3>
+        </div>
+
+        <h2>Trabalhando com tabelas</h2>
+        <table>
+            <caption>Datas de Aniversário</caption>
+            <tr>
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Aniversário</td>
+            </tr>
+            <tr>
+                <td>Giovanna</td>
+                <td>30</td>
+                <td>04/06/1993</td>
+            </tr>
+            <tr>
+                <td>Raquel</td>
+                <td>21</td>
+                <td>08/09/2002</td>
+            </tr>
+            
+        </table>
+
+        <p> Aqui temos um parágrafro <span>com um span</span> </p>
+
+        <div>
+            <h2>Serve para agrupar conjunto de informações/ elementos e estilização da pagina</h2>
+        </div>
+    
+        <h2>Gerenciamento de foco</h2>
+        <label for="input">Segundo elemento focado:</label>
+        <input type="text" id="input">
+    
+        <div tabindex="0"> Terceiro elemento focado</div>
+    
+        <div>Essa div não é focado, não é navegável pois não tem tabindesx declarado</div>
+    
+        <div tabindex="1"> Primeiro elemento focado (com navegação pelo tab do teclado)</div>
+    
+        <div tabindex="2"> modificar não é uma boa pratica mas pode ajudar em alguns momentos.</div>
+
+    </main>
+
+    <article>
+        <h3>um artigo do site, conteúdo independente</h3>
+        <p>esse artigo é muito bom!</p>
+    </article>
+
+    <section>
+        <h1>Seção separada, precica ter um titulo.</h1>
+        <p>essa é uma seção maneira, não pode ser usado apenas para estilizar</p>
+    </section>
+    
+    <aside>
+        <p>Conteúdo relacionado ao main, pode-se colocar biografia aqui sobre o texto do main</p>
+    </aside>
+
+    <footer>
+        Aqui é o rodapé do site
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+O resultado da multiplicacao é: 20
